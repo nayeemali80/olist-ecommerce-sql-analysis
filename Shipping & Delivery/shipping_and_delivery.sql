@@ -19,7 +19,8 @@ copy (SELECT
     COUNT(*) AS late_orders
 FROM orders
 WHERE order_status = 'delivered'
-  AND order_delivered_customer_date > order_estimated_delivery_date
-)
+  AND order_delivered_customer_date > order_estimated_delivery_date)
 to 'D:/SQL Analysis Project/Shipping & Delivery/count_of_late_deliveries.csv'
 with csv header;
+
+
